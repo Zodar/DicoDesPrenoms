@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tarik.merabet.dicodesprenoms.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"
+        android:id="@+id/buttonSuivant"
+        android:text="@string/suivant"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFavoris"
+        android:text="@string/favoris"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVOrigine"
+        android:text="@string/origine"
+        android:layout_above="@+id/buttonSuivant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVPrenomResult"
+        android:text="@string/prenom"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_above="@+id/TVOrigine"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVGenres"
+        android:text="@string/genres"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:layout_below="@+id/TVGenres"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <RadioButton android:id="@+id/RB_tout_genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tout"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignRight="@+id/TVGenres"
+        android:layout_alignEnd="@+id/TVGenres" />
+
+    <RadioButton android:id="@+id/RB_garcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garcon"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/RB_tout_genres"
+        android:layout_alignStart="@+id/RB_tout_genres" />
+
+    <RadioButton android:id="@+id/RB_Fille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fille"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/RB_garcon"
+        android:layout_alignStart="@+id/RB_garcon" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVOrigineSelector"
+        android:text="@string/origine"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:layout_below="@+id/TVOrigineSelector"/>
+
+    <Spinner
+        android:id="@+id/list_origines"
+        android:layout_below="@id/TVOrigineSelector"
+        android:layout_marginTop="13sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

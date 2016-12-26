@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DicoDesPrenoms</string>
+    <string name="suivant">Suivant</string>
+    <string name="favoris">+ Favoris</string>
+    <string name="genres">Genres</string>
+    <string name="origine">Origine</string>
+    <string name="prenom">Prénom</string>
+    <string name="tout">Tout</string>
+    <string name="garcon">Garçon</string>
+    <string name="fille">Fille</string>
+</resources>
