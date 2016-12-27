@@ -13,7 +13,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_radius"
+        android:background="@drawable/button_radius_blue"
         android:id="@+id/buttonSuivant"
         android:text="@string/suivant"
         android:layout_alignParentBottom="true"
@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonFavoris"
         android:text="@string/favoris"
+        android:background="@drawable/button_radius_yellow"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -80,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tout"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="15dp"
         android:layout_below="@+id/radioGroup"
         android:layout_alignRight="@+id/TVGenres"
         android:layout_alignEnd="@+id/TVGenres" />
